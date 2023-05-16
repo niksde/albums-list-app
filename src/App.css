@@ -1,8 +1,17 @@
-.App-header {
+.App-container {
   background-color: #aeaeae;
+}
+
+.App-header {
   display: flex;
   justify-content: space-between;
   padding: 16px;
+}
+
+.container {
+  max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .notification-badges li {
@@ -16,7 +25,7 @@
   line-height: 100px;
   padding: 5px;
   font-size: 30px;
-  color: black
+  color: black;
 }
 .notification-badges [data-badge] {
   position: relative;

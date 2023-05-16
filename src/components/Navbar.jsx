@@ -2,8 +2,10 @@ import React from "react";
 
 export default function Navbar({ title, RenderRightComponent }) {
   return (
-    <header className="App-header">
-      {title} {RenderRightComponent && RenderRightComponent}
+    <header className="App-container">
+      <div className="App-header container">
+        {title} {RenderRightComponent && RenderRightComponent}
+      </div>
     </header>
   );
 }

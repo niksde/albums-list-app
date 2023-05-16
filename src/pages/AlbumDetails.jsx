@@ -15,15 +15,17 @@ export default function AlbumDetails({ albums, onTitleClick }) {
   return (
     <div>
       <Navbar title="Logo" />
-      {album && <h3>{`${album.name} ${album.userId}`}</h3>}
-      {album?.titles.map((title) => (
-        <Title
-          title={title.name}
-          seen={title.seen}
-          key={title.id}
-          onClick={() => onClick(title.id)}
-        />
-      ))}
+      <div className="container">
+        {album && <h3>{`${album.name} ${album.userId}`}</h3>}
+        {album?.titles.map((title) => (
+          <Title
+            title={title.name}
+            seen={title.seen}
+            key={title.id}
+            onClick={() => onClick(title.id)}
+          />
+        ))}
+      </div>
     </div>
   );
 }

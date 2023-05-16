@@ -18,7 +18,7 @@ export default function Home({ albums, search, onSearchChange }) {
           <input placeholder="Search" value={search} onChange={onSearchChange} />
         }
       />
-      <ul className="notification-badges">
+      <ul className="notification-badges container">
         {filteredAlbums.map((album) => (
           <Card
             userId={album.userId}
