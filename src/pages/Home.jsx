@@ -6,7 +6,7 @@ export default function Home({ albums, search, onSearchChange }) {
   const filteredAlbums =
     search.length > 0
       ? albums.filter((album) =>
-          `${album.name} ${album.userId}`.toLowerCase().includes(search)
+          `${album.name} ${album.userId}`.toLowerCase().includes(search.toLowerCase())
         )
       : albums;
 
