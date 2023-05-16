@@ -1,0 +1,45 @@
+.App-header {
+  background-color: #aeaeae;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.notification-badges li {
+  display: inline-block;
+  min-width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  vertical-align: top;
+  margin: 10px;
+  text-align: center;
+  line-height: 100px;
+  padding: 5px;
+  font-size: 30px;
+  color: black
+}
+.notification-badges [data-badge] {
+  position: relative;
+}
+.notification-badges [data-badge]:after {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  min-width: 15px;
+  min-height: 15px;
+  line-height: 15px;
+  padding: 5px;
+  color: #fff;
+  background-color: #4e6ef7;
+  font-size: 15px;
+  border-radius: 25px;
+  content: attr(data-badge);
+  border: solid 1px #4e6ef7;
+}
+
+.title {
+  width: 100%;
+  padding: 10px;
+  border: solid 1px #aeaeae;
+  margin-bottom: 5px;
+}
